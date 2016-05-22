@@ -1,0 +1,724 @@
+/*头部样式*/
+.header{
+    width: 100%;
+    height: 60px;
+    background: #292929;
+    min-width: 1380px;
+}
+.header .nav{
+    width: 1380px;
+    margin:0 auto;
+    padding: 5px 0;
+    height: 50px;
+}
+.header .nav h1 {
+    width: 105px;
+    height: 50px;
+    line-height: 60px;
+    float: left;
+}
+.header .nav .adLogo{
+    width: 86px;
+    height: 30px;
+    margin-left: 30px;
+    float: left;
+    padding: 5px 0;
+}
+.header .nav .search{
+    width: 573px;
+    height: 36px;
+    float: left;
+    margin-left: 137px;
+    padding: 5px 0;
+    position: relative;
+}
+.header .nav .search input{
+    width: 523px;
+    height: 95%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-indent: 8px;
+    color: #666;
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Arial, Helvetica, sans-serif;
+    background: #e3e3e3;
+}
+.header .nav .search input:hover{
+    border: 1px solid #5ead06;
+    background: #fff;
+}
+.header .nav .search a{
+    position: absolute;
+    left: 462px;
+    width: 110px;
+    height: 100%;
+    background: url("../imgs/topNav-v2.png") no-repeat;
+}
+.nav ul.navBar{
+    float: right;
+    height: 50px;
+}
+.nav ul.navBar li{
+    line-height: 50px;
+    float: left;
+}
+.nav ul.navBar li a{
+    color: #a9a9a9;
+    padding: 0 8px;
+
+}
+.nav ul.navBar li:hover a{
+    color: #699f00;
+
+}
+.nav ul.navBar li.postVideo{
+    position: relative;
+    width: 66px;
+    text-align: center;
+}
+
+.nav ul.navBar li.postVideo span{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 14px;
+    height: 12px;
+    background: url("../imgs/icons.png") -8px -104px;
+}
+.nav ul.navBar li.postVideo:hover span{
+    background: url("../imgs/icons.png") -23px -104px;
+}
+.nav ul.navBar li.postVideo em,.nav ul.navBar li.navMsg em,.nav ul.navBar li.playRecord em {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    top: 25px;
+    left: 46px;
+    background: url("../imgs/uporigin.png") no-repeat;
+}
+.nav ul.navBar li.postVideo em.down,.nav ul.navBar li.navMsg em.down,.nav ul.navBar li.playRecord em.down{
+    background: url("../imgs/downtri1.png");
+}
+.nav ul.navBar li.postVideo span.hover{
+    background: url("../imgs/icons.png") -23px -104px;
+}
+.nav ul.navBar li.postVideo:hover em.tri,.nav ul.navBar li.navMsg:hover em.tri,.nav ul.navBar li.playRecord:hover em.tri{
+    background:url("../imgs/downtri.png");
+}
+.nav ul.navBar li.postVideo .triangle,.nav ul.navBar li.navMsg .triangle,.nav ul.navBar li.playRecord .triangle{
+    width: 16px;
+    height: 9px;
+    background:  url("../imgs/triangle1.png") no-repeat center center;
+    position: absolute;
+    left: 28px;
+    top: 45px;
+    display: none;
+}
+/*上传视频对应的下拉框ol*/
+.nav ul.navBar li.postVideo ol{
+    position: absolute;
+    left: -17px;
+    top: 54px;
+    width: 100px;
+    background: #fff;
+    display:none;
+    z-index:10;
+}
+.nav ul.navBar li.postVideo ol.block{
+    display:block;
+}
+.nav ul.navBar li.postVideo ol li{
+    float: none;
+    line-height: 35px;
+
+}
+.nav ul.navBar li.postVideo ol li a{
+    padding: 14px 25px;
+    color: #333;
+    position: relative;
+}
+.nav ul.navBar li.postVideo ol li a:hover{
+    color: #699f00;
+}
+.nav ul.navBar li.postVideo ol li em{
+    width: 9px;
+    height: 9px;
+    background: url("../imgs/icons.png") -9px -135px;
+    position: absolute;
+    left: 72px;
+    border: 0;
+    top: 8px;
+}
+/*导航条消息对应的下拉框div*/
+.nav ul.navBar li.navMsg{
+    position: relative;
+    width: 43px;
+}
+.nav ul.navBar li.navMsg em{
+    left: 31px;
+}
+.nav ul.navBar li.navMsg .nav_msg{
+    width: 300px;
+    height: 378px;
+    background: #fff;
+    position: absolute;
+    left: -192px;
+    top: 54px;
+    display: none;
+}
+.nav_msg ul{
+    border-bottom:2px solid #e6e6e6;
+    overflow: hidden;
+}
+.nav_msg ul li{
+    width: 100px;
+    height: 38px;
+    float: left;
+    text-align: center;
+
+}
+.nav_msg ul li.navOn{
+    border-bottom:3px solid #699f00;
+}
+.nav_msg ul li a{
+    line-height: 38px;
+    display: block;
+}
+.nav_msg div{
+    width: 100%;
+    height: 302px;
+    text-align: center;
+    line-height: 302px;
+    display:none;
+
+}
+.nav_msg div.navOn{
+    display: block;
+}
+.nav_msg p{
+    /*width: 99%;*/
+    height: 31px;
+    border: 1px solid #cccccc;
+    background: #f2f2f2;
+    text-align: center;
+    line-height: 31px;
+}
+/*播放记录下拉框*/
+.nav ul.navBar li.playRecord{
+    position: relative;
+    width: 68px;
+}
+.nav ul.navBar li.playRecord em{
+    position: absolute;
+    left: 57px;
+}
+.nav ul.navBar li.playRecord .playBoxClick{
+    width: 300px;
+    height: 340px;
+    background: #fff;
+    position: absolute;
+    left: -235px;
+    top: 54px;
+    text-align: center;
+    line-height: 340px;
+    display: none;
+}
+.nav ul.navBar li.playRecord .playBoxClick p{
+    width: 100%;
+    height: 31px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #f2f2f2;
+    text-align: center;
+    line-height: 31px;
+    position: absolute;
+    bottom: 0;
+}
+.nav ul.navBar .nav_msg p a,.nav ul.navBar li.playRecord .playBoxClick p a{
+    color: #333;
+}
+
+/*以下是banner部分样式*/
+.banner{
+    width: 100%;
+    height: 520px;
+    background: #010101;
+    position: relative;
+}
+.banner .bannerMin{
+    width: 1500px;
+    height: 410px;
+    margin:0 auto;
+    position: relative;
+}
+.banner .bannerMin img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*opacity: 0;*/
+}
+.banner .bannerNav{
+    width: 1380px;
+    margin: 10px auto;
+    border: 1px solid #59a900;
+    border-radius: 3px;
+    overflow: hidden;
+    height: 88px;
+}
+.banner .bannerNav ul{
+    float: left;
+    background: url("../imgs/navMenu-line.png") no-repeat right;
+    padding-left: 2%;
+    padding-top: 0.5%;
+}
+.banner .bannerNav ul li{
+    /*width: 100%;*/
+}
+
+
+.banner .bannerNav ul li a{
+    width: 100%;
+    color: #d3cdbd;
+    display: inline-block;
+    line-height: 25px;
+}
+.banner .bannerNav ul li a:hover{
+    color:#59a900;
+}
+.banner .bannerNav ul.bannerNewsList1{
+    width: 4.5%;
+}
+.banner .bannerNav ul.bannerNewsList2{
+    width: 11%;
+    /*overflow: hidden;*/
+}
+.banner .bannerNav ul.bannerNewsList2 li{
+    width: 50%;
+    float: left;
+}
+.banner .bannerNav ul.bannerNewsList3{
+    width: 9%;
+}
+.banner .bannerNav ul.bannerNewsList3 li{
+    width: 50%;
+    float: left;
+}
+.banner .bannerNav ul.bannerNewsList4{
+     width: 9%;
+ }
+.banner .bannerNav ul.bannerNewsList4 li{
+    width: 50%;
+    float: left;
+}
+.banner .bannerNav ul.bannerNewsList5{
+    width: 11%;
+}
+.banner .bannerNav ul.bannerNewsList5 li{
+    width: 50%;
+    float: left;
+}
+.banner .bannerNav ul.bannerNewsList6{
+    width: 15%;
+    padding-left: 3%;
+}
+.banner .bannerNav ul.bannerNewsList6 li{
+    width: 50%;
+    float: left;
+}
+.banner .bannerNav ul.bannerNewsList7{
+    width: 15%;
+    padding-left: 3%;
+}
+.banner .bannerNav ul.bannerNewsList7 li{
+    width: 50%;
+    float: left;
+}
+.banner .bannerNavRight{
+    position: absolute;
+    right: 130px;
+    top: 32px;
+    width: 220px;
+    height: 343px;
+    background:url("../imgs/site-focuslist_bg_new.png") center center;
+}
+.banner .bannerNavRight ul{
+    width: 100%;
+    height: 100%;
+}
+.banner .bannerNavRight ul li{
+    height: 10%;
+}
+.banner .bannerNavRight ul li.bg{
+    background:green;
+}
+/*.banner .bannerNavRight ul li:hover{*/
+    /*background: green;*/
+/*}*/
+.banner .bannerNavRight ul li a{
+    color: #d3d3dd;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+}
+
+/*今日焦点区域*/
+.today{
+    width: 1380px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.newsText{
+    width: 400px;
+    height: 446px;
+    float: left;
+}
+.today a:hover{
+    color: #83bc47;
+}
+.newsText h2{
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    border-bottom: 2px solid #83bc47;
+}
+.newsText h2 a{
+    font-weight: normal;
+}
+.newsText h2 a:nth-child(1){
+    font-size: 25px;
+    color: #609a00;
+    font-weight: normal;
+}
+.newsText h2 a:nth-child(2){
+    font-size: 12px;
+    color: #689e02;
+}
+.newsText h2 a:nth-child(3){
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 66px;
+    height: 26px;
+    border:1px solid #ccc;
+    border-radius: 20px;
+    background: #fff url("../imgs/five-star.png") no-repeat no-repeat 5px 5px;
+    text-align: center;
+    line-height: 26px;
+}
+.newsText h2 a:nth-child(3):hover{
+    color: #fff;
+    background: #83bc47 url("../imgs/five-star1.png") no-repeat no-repeat 5px 5px;;
+}
+
+.newsText h3{
+    line-height: 40px;
+    padding-left: 15px;
+}
+.newsText h3 a{
+    font-size: 18px;
+    color: #343331;
+    text-align: left;
+}
+
+ ul.availableText li{
+    width: 380px;
+    height: 32px;
+    background: url("../imgs/sanjiao.png") no-repeat 0 5px;
+}
+ ul.availableText li a{
+    color: #3b403c;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.left{
+    float: left;
+}
+.left img{
+    margin-right: 15px;
+}
+.left p{
+    width: 180px;
+    line-height: 35px;
+    background: #f2f2f2;
+    text-align: center;
+    color: #353928;
+}
+.newsPhoto{
+    width: 380px;
+    height: 446px;
+    float: left;
+    margin-left: 20px;
+}
+.newsPhoto .smallBanner{
+    width: 380px;
+    height: 252px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.smallBanner a{
+    width: 25px;
+    height: 43px;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    margin-top: -21px;
+    text-align:center;
+    line-height: 43px;
+}
+.smallBanner a.left{
+    left: 0;
+    top: 50%;
+    margin-top: -21px;
+}
+.smallBanner a.right{
+    right: 0;
+}
+.smallBanner p{
+    width: 380px;
+    height: 40px;
+    background: rgba(0,0,0,0.5) url("../imgs/index-playBtn.png") no-repeat 5px 5px;
+    color: #fff;
+
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 40px;
+}
+.smallBanner p a{
+    font-size: 16px;
+    width: 100%;
+    background:none;
+    left:10px;
+}
+.smallBanner p a:hover{
+    color: #fff;
+}
+.photo{
+    width: 560px;
+    height: 446px;
+    float: left;
+    margin-left: 20px;
+}
+.photo ul{
+    width: 100%;
+    height: 100%;
+}
+.photo ul li{
+    width: 180px;
+    height: 136px;
+    float: left;
+    margin:0 0 10px 6px;
+}
+.photo ul li p{
+    height: 35px;
+    line-height: 35px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.photo ul li p a{
+    color: #302e3b;
+}
+.photo ul li p a:hover{
+    color: #83bc47;
+}
+
+/*综艺节目部分*/
+.tvShow,.recommend{
+    width: 1380px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.showLeft{
+    width: 1180px;
+    float: left;
+    overflow: hidden;
+}
+.showHead h4{
+    width: 100%;
+    height: 47px;
+    border-bottom:2px solid #8cbf22;
+    background: url("../imgs/tit-playBtn.png") no-repeat 0 10px;
+    position: relative;
+}
+.showHead h4 a:nth-child(1){
+    font-size: 30px;
+    display: inline-block;
+    color: #679f00;
+    margin-left: 20px;
+    font-weight: normal;
+}
+.showHead h4 a:nth-child(2){
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #679f00;
+}
+.showHead h4 a:nth-child(3),.showHead h4 a:nth-child(4),.showHead h4 a:nth-child(5),.showHead h4 a:nth-child(6),.showHead h4 a:nth-child(7){
+    color: #3c3032;
+}
+.showHead h4 a:nth-child(3){
+    display: inline-block;
+    color: #3c3032;
+    margin-left: 33px;
+}
+.showHead h4 span{
+    color: #f9f9f9;
+}
+.showHead h4 a：hover{
+    color: #6da254;
+}
+.showLeft1{
+    width: 380px;
+    height: 324px;
+    margin-top: 25px;
+    float: left;
+}
+.showLeft1 img{
+    width: 100%;
+    height: 270px;
+}
+.showLeft1 p{
+    height: 54px;
+    background: #f2f2f2;
+    position: relative;
+}
+.showLeft1 p span{
+    position: absolute;
+    left: 10px;
+    top:5px;
+}
+.showLeft1 p a{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #8ea0a4;
+}
+.showLeft ul{
+    width: 800px;
+    float: left;
+    margin-top:15px;
+    overflow: hidden;
+}
+.showLeft ul li{
+    width: 180px;
+    height: 155px;
+    float: left;
+    position: relative;
+    margin: 10px 0 20px 20px;
+}
+.showLeft ul li p{
+    height: 55px;
+    background:#f2f2f2;
+    position: relative;
+}
+.showLeft ul li p span{
+    position: absolute;
+    left: 10px;
+    top:5px;
+}
+.showLeft ul li p a{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #8ea0a4;
+}
+.p1080{
+    position: absolute;
+    width: 40px;
+    height: 16px;
+    background: url("../imgs/video-marks-0623.png") no-repeat 0 -40px;
+    bottom: 60px;
+    left: 10px;
+}
+.showRight{
+    float: right;
+    width: 180px;
+}
+.rightHead{
+    width: 100%;
+    height: 47px;
+    border-bottom:2px solid #8cbf22;
+    background: url("../imgs/tit-playBtn.png") no-repeat 0 10px;
+}
+.rightHead a{
+    font-size: 30px;
+    display: inline-block;
+    color: #679f00;
+    margin-left: 20px;
+    font-weight: normal;
+}
+.rightHead a:nth-child(2){
+    font-size: 12px;
+    margin-left: 0;
+}
+
+.rightPhoto{
+    margin-top: 25px;
+}
+.showRight p{
+    height: 37px;
+    background:#f2f2f2;
+    line-height: 37px;
+    border-bottom: 1px dashed #cccccc;
+    text-align: center;
+}
+.showRight ul{
+    background: #f2f2f2;
+}
+.showRight ul li{
+    line-height: 37px;
+    text-align: center;
+
+}
+.showRight ul li a{
+    color: #333;
+}
+.head{
+    width: 100%;
+    height: 47px;
+    border-bottom:1px solid #ccc;
+}
+.head a:nth-child(1){
+    font-size:20px;
+    color: #92a704;
+}
+.head a:nth-child(2){
+    color: #92a704;
+    display: inline-block;
+    margin-left: 20px;
+}
+.head a:nth-child(3){
+    color: #333;
+    display: inline-block;
+    margin-left: 20px;
+}
+.head a:nth-child(4){
+    color: #333;
+}
+.photoList ul{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.photoList ul li{
+    width: 180px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.photoList ul li:last-child{
+    margin-right: 0;
+}
+.photoList ul li p{
+    width: 100%;
+    height: 54px;
+    background: #f2f2f2;
+}
+.photoList ul li p a{
+    color: #333;
+}

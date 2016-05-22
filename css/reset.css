@@ -1,0 +1,19 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font:12px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Arial, Helvetica, sans-serif;;
+}
+h1,h2,h3,h4,h5,h6,div,ul,li,ol,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+    display: block;
+}
